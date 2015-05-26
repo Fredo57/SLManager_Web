@@ -1,0 +1,663 @@
+	/* CSS version PC */
+
+
+/* Global CSS */
+body
+{
+	font-family:calibri, verdana, ubuntu, tahoma;
+	background:url(black_wallpeper.jpeg);
+  	font-family: sans-serif;
+  	font-weight: normal;
+  	margin: 10px;
+  	color: #FFF;
+}
+div {
+  clear: both;
+  margin: 0 15px;
+}
+div label {
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+}
+h1
+{
+	text-align: center;
+	color:#fff9c4;
+	width: 50%;
+	border:solid black 100%;
+	margin:auto;
+	margin-bottom:6.5%;
+}
+h2
+{
+	color:#fff9c4;	
+	text-align: center;
+}
+img
+{
+	width: 100%;
+	height: 125%;
+}
+legend
+{
+	text-align: center;
+	width:100%;
+}
+
+
+/* Bloc Pedale */
+#radio_block
+{
+	width: 800px;
+	height: 125px;
+	margin: auto;
+	margin-top:-1%;
+	margin-bottom: 3.05%;
+	background-color: rgba(182,182,182,0.5) ;
+	border-radius: 7% 5% 7% 5%;
+}
+#para_r1,#para_r2,#para_r3,#para_r4,#para_r5
+{
+	display: inline-block;
+	width: 18%;
+	height:50%;
+}
+#para_r1
+{
+	margin-left:2.5%;
+}
+	/* Gestion Boutton 1 */
+#imgPedal_1:not(:checked), #imgPedal_1:checked
+{
+	position: relative;
+	display:none;
+}
+
+#imgPedal_1:not(:checked) + label, #imgPedal_1:checked + label
+{
+	position: relative;
+	cursor: pointer;
+}
+
+	/* Gestion Boutton 2 */
+#imgPedal_2:not(:checked), #imgPedal_2:checked
+{
+	position: relative;
+	display:none;
+}
+
+#imgPedal_2:not(:checked) + label, #imgPedal_2:checked + label
+{
+	position: relative;
+	cursor: pointer;
+}
+
+	/* Gestion Boutton 3 */
+#imgPedal_3:not(:checked), #imgPedal_3:checked
+{
+	position: relative;
+	display:none;
+}
+
+#imgPedal_3:not(:checked) + label, #imgPedal_3:checked + label
+{
+	position: relative;
+	cursor: pointer;
+}
+
+	/* Gestion Boutton 4 */
+#imgPedal_4:not(:checked), #imgPedal_4:checked
+{
+	position: relative;
+	display:none;
+}
+
+#imgPedal_4:not(:checked) + label, #imgPedal_4:checked + label
+{
+	position: relative;
+	cursor: pointer;
+}
+
+	/* Gestion Boutton 5 */
+#imgPedal_5:not(:checked), #imgPedal_5:checked
+{
+	position: relative;
+	display:none;
+}
+
+#imgPedal_5:not(:checked) + label, #imgPedal_5:checked + label
+{
+	position: relative;
+	cursor: pointer;
+}
+
+/* Bloc Modification */
+#under_block
+{
+	background-color: rgba(182,182,182,0.5) ;
+	width: 800px;
+	height: 450px;
+	margin: 0 auto;
+	padding-top:1%;
+	border-radius: 7% 5% 7% 5%;
+}
+
+#pedal0
+{
+	position:absolute;
+	visibility: hidden;
+}
+#pedal1
+{
+	position:absolute;
+	margin-left:5px;
+	text-align: center;
+	display: inline-block;
+	width:8%;
+	height:82px;
+}
+#pedal2
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	width:8%;
+	height:82px;
+	margin-left:163px;
+}
+#pedal3
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	width:8%;
+	height:82px;
+	margin-left:323px;
+}
+#pedal4
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	width:8%;
+	height:82px;
+	margin-left:483px;
+}
+#pedal5
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	width:8%;
+	height:82px;
+	margin-left:638px;
+}
+
+/* hide input */
+input.radio:empty , input.bleu:empty{
+  margin-left: -2500px;
+}
+/* style label */
+input.radio:empty ~ label , input.bleu:empty ~ label {
+  position: relative;
+  float: left;
+  line-height: 1.25em;
+  text-indent: 1.5em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+input.radio:empty ~ label:before , input.bleu:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 1.25em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+  content:'\2714';
+  text-indent: .25em;
+  color: #212121;
+}
+input.radio:hover:not(:checked) ~ label {
+  color: #202020;
+}
+/* toggle on */
+input.radio:checked ~ label:before {
+  content:'\2714';
+  text-indent: 0.25em;
+  color: #212121;
+  background-color: #999999;
+}
+input.radio:checked ~ label{
+  color: #212121;
+}
+/* radio focus */
+input.radio:focus ~ label:before{
+  box-shadow: 0 0 0 3px #999;
+}
+/*  Bloc forme */
+#pedal1,#pedal2,#pedal3,#pedal4,#pedal5{
+  width:8%;
+  height: 400px;
+}
+.s_option{
+  width:100%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+#D_next{
+  margin-top:-1.75%;
+}
+#D_add{
+  margin-top:2em;
+}
+/* ID p1..p5 */
+#in_number_GTV,#in_number_GTV2,#in_number_GTV3,#in_number_GTV4,#in_number_GTV5{
+  position: absolute;
+  height: 1.5em;
+  width: 8em;
+  margin-top:1em;
+  margin-left: -4.2em;
+  text-align: center;
+}
+#s_loop,#s_loop2,#s_loop3,#s_loop4,#s_loop5{
+  position: absolute;
+  height: 2.2em;
+  width: 8.5em;
+  margin-top:1em;
+  margin-left: -4.2em;
+  text-align: center;
+}
+#s_Actions1,#s_Actions2,#s_Actions3,#s_Actions4,#s_Actions5{
+  position: absolute;
+  height: 2em;
+  width: 9em;
+  margin-top:1em;
+  margin-left:-4.2em;
+  text-align: center;
+}
+/* Class Actions JS */
+.Activation{
+  visibility: visible;
+}
+.Desactivation{
+  visibility: hidden;
+}
+
+/* Bloc Send / Reset */
+#Bloc_send
+{
+	width: 60%;
+	margin: auto;
+	margin-top: 35px;
+	text-align: center;
+}
+
+.Input_send p
+{
+	display:inline-block;
+}
+.Input_send input
+{
+	margin-left:25px;
+	margin-top:1%;
+	margin-bottom:1%;
+	width:200px;
+	background:rgba(182,182,182,0.5);
+	height: 50px;
+	border-radius: 15px;
+}
+#save
+{
+	display: inline-block;
+}
+#reset
+{	
+	display: inline-block;
+}
+#send
+{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width: 1080px)
+{
+
+	/* Gestion Générale */	
+
+body
+{
+	background:#212121;
+	font-family:calibri, verdana, ubuntu, tahoma;
+  	font-family: sans-serif;
+  	font-weight: normal;
+  	margin: 10px;
+  	color: #FFF;
+}
+h1
+{
+	font-size:65px;
+	color:#B6B6B6;
+	text-align: center;
+	width: 95%;
+	margin:auto;
+	margin-bottom:6.5%;
+	text-decoration: underline;
+}
+h2
+{
+	font-size:45px;
+	color:#B6B6B6;	
+	text-align: center;
+}
+legend
+{
+	font-size:45px;
+	color:#FFF9C4;
+	text-align: center;
+	width:100%;
+}
+p
+{
+	width: 20%;
+}
+img
+{
+	width: 100%;
+	height: 100%;
+}
+div 
+{
+  clear: both;
+  margin: 0 15px;
+}
+div label
+{
+  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+}
+
+	/* Gestion du bloc SEND */
+.Input_send
+{
+	text-align: center;
+	width: 80%;
+	height: 325px;
+	margin-top:3.5%;
+	margin-left:10%;
+	border:#FFF9C4 5px solid;
+	border-radius: 5%;
+}
+
+.Center
+{
+	width:100%;
+	padding:0;
+	margin-left: -50px;
+	margin-top: -8px;
+}
+
+/* Gestion Modification */
+#under_block
+{
+	background-color: rgba(182,182,182,0.50) ;
+	width: 75%;
+	height: 2175px;
+	margin: 0 auto;
+	padding-top:1%;
+	border-radius: 7% 5% 7% 5%;
+}
+#pedal0
+{
+	position:absolute;
+	visibility: hidden;
+}
+#pedal1
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+}
+#pedal2
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	margin-left:3.1%;
+	margin-top:425px;
+}
+#pedal3
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	margin-left:3.1%;
+	margin-top:850px;
+}
+#pedal4
+{
+	position:absolute;
+	text-align: center;
+	display: inline-block;
+	margin-left:3.1%;
+	margin-top:1275px;
+}
+#pedal5
+{
+	position:absolute;
+	text-align: center;
+	margin-left:3.1%;
+	margin-top:1725px;
+}
+
+/* hide input */
+input.radio:empty , input.bleu:empty{
+  margin-left: -2500px;
+}
+/* style label */
+input.radio:empty ~ label{
+  position: relative;
+  width:107.5%;
+  float: left;
+  line-height: 1.25em;
+  text-indent: 1.5em;
+  margin-top: 1em;
+  margin-left:-4%;
+  cursor: pointer;
+}
+input.radio:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 1.25em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+  content:'\2714';
+  text-indent: .25em;
+  color: #212121;
+}
+input.radio:hover:not(:checked) ~ label {
+  color: #202020;
+}
+/* toggle on */
+input.radio:checked ~ label:before {
+  content:'\2714';
+  text-indent: 0.25em;
+  color: #212121;
+  background-color: #999999;
+}
+input.radio:checked ~ label{
+  color: #212121;
+}
+/* radio focus */
+input.radio:focus ~ label:before{
+  box-shadow: 0 0 0 3px #999;
+}
+/*  Bloc forme */
+#pedal1,#pedal2,#pedal3,#pedal4,#pedal5{
+  margin-left:5%;
+  width:60%;
+  height: 400px;
+}
+.s_option{
+  width:100%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+#D_next{
+  margin-top:-1.75%;
+}
+#D_add{
+  margin-top:2em;
+}
+
+/* ID p1..p5 */
+#in_number_GTV,#in_number_GTV2,#in_number_GTV3,#in_number_GTV4,#in_number_GTV5{
+  position: absolute;
+  height: 1.5em;
+  width: 95%;
+  margin-top:1em;
+  margin-left:-48%;
+  text-align: center;
+}
+#s_loop,#s_loop2,#s_loop3,#s_loop4,#s_loop5{
+  position: absolute;
+  height: 2.2em;
+  width: 96%;
+  margin-top:1em;
+  margin-left:-48%;
+  text-align: center;
+}
+#s_Actions1,#s_Actions2,#s_Actions3,#s_Actions4,#s_Actions5{
+  position: absolute;
+  height: 2em;
+  width: 96%;
+  margin-top:1em;
+  margin-left:-48%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* Gestion du bloc Choix Pedale */
+#radio_block
+{
+	width: 75%;
+	height: 2100px;
+	background-color: rgba(182,182,182,0.5) ;
+	border-radius: 7% 5% 7% 5%;
+}
+
+
+	/* Gestion Boutton 1 */
+#para_r1
+{
+	width:100%;
+	height:450px;
+	margin:auto;
+	margin-left:-2.5%;
+	margin-top:-5%;
+}
+	/* Gestion Boutton 2 */
+#para_r2
+{
+	width:100%;
+	height:450px;
+	margin:auto;
+	margin-left:-2.5%;
+	margin-top:-5%;
+}
+	/* Gestion Boutton 3 */
+#para_r3
+{
+	width:100%;
+	height:450px;
+	margin:auto;
+	margin-left:-2.5%;
+	margin-top:-5%;
+}
+	/* Gestion Boutton 4 */
+#para_r4
+{
+	width:100%;
+	height:450px;
+	margin:auto;
+	margin-left:-2.5%;
+	margin-top:-5%;
+}
+	/* Gestion Boutton 5 */
+#para_r5
+{
+	width:100%;
+	height:450px;
+	margin:auto;
+	margin-left:-2.5%;
+	margin-top:-5%;
+}
+
+.Input_send input
+{
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 100px;
+	font-size: 2.8em
+}
+
+}
